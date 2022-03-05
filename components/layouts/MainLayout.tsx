@@ -1,10 +1,10 @@
+import { FC } from "react";
 import React from "react";
 import Head from "next/head";
-import Link from "next/link";
-import Navbar from "../NavBar";
+import Navbar from "../Navbar";
 import styles from "./MainLayout.module.css";
 
-const MainLayout = ({ children }) => {
+const MainLayout: FC = ({ children }) => {
   console.log(children);
   return (
     <div className={styles.container}>
